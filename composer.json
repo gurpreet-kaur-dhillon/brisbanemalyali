@@ -7,5 +7,8 @@
             "helper/setting.php",
             "helper/helperFunc.php" 
         ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.1"
     }
 }
