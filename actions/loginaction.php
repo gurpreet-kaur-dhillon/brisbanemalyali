@@ -106,9 +106,10 @@
         if($userAuth->pwdCheck($email,$pwd)){
             $user = $userAuth->pwdCheck($email,$pwd);
             
-            $_SESSION['id'] = $user[0]['id'];
-            $_SESSION['email'] = $user[0]['email'];
-            $_SESSION['name'] = $user[0]['name'];
+            $_SESSION['id']     = $user[0]['id'];
+            $_SESSION['email']  = $user[0]['email'];
+            $_SESSION['name']   = $user[0]['name'];
+            $_SESSION['user_role'] = $user[0]['user_role'];
             
             echo json_encode(array(
                     'status'=> 1,
