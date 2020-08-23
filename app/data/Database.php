@@ -82,13 +82,14 @@
             return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
-        public function saveData($query,$values, $type = null){
+         public function saveData($query,$values, $type = null){
             $this->stmt = $this->pdo->prepare($query);
             $this->bind($values, $type = null);
-            $result = $this->stmt->execute();
+            $result['status'] = $this->stmt->execute();
+            $result['last_insert_id'] = $this->pdo->lastInsertId();
                 if($this->stmt->rowCount()>0):
-                      $affectedRows = $this->stmt->rowCount();
-                      return $affectedRows;
+                      $result['affectedRows'] = $this->stmt->rowCount();
+                      return $result;
                 endif;        
         }
 
