@@ -14,7 +14,7 @@
           <nav id="nav-menu-container">
               <ul class="nav-menu">
                   <li class="menu-active"><a href="#intro">Home</a></li>
-                  <li class=""><a href="dashboard/event/create">Create Event</a></li>
+                  <li class=""><a href="#intro">Create Event</a></li>
 
                   <li><a href="#contact">Contact</a></li>
 

@@ -8,7 +8,7 @@
         <meta content="" name="keywords">
         <meta content="" name="description">
 
-        <base href="<?php echo DOMAIN;?>">
+        <base href="http://localhost/theevent/">
 
         <!-- Favicons -->
         <!-- <link href="img/favicon.png" rel="icon">
