@@ -15,7 +15,7 @@
         <a href="dashboard/event/create" class="about-btn scrollto">Host The Event</a>
     </div>
     <div id='homeEventSearch'>
-        <form action="search/" method="get">
+        <form action="searchevent" method="post">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 input-icons">
@@ -100,7 +100,7 @@ $events = $eventcls->fetch(5);
 
     <div class="row mt-2">
         <div class="col-12 m-auto text-center">
-            <a href="events" class="btn custom_outline_btn mb-2">SEE MORE</a>
+            <a href="" class="btn custom_outline_btn">SEE MORE</a>
         </div>
     </div>
     </div>
