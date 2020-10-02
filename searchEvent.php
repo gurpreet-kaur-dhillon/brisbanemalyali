@@ -2,7 +2,7 @@
     use App\classes\Search;
     use App\classes\Validation as Valid;
 
-   
+    //Valid::inputValidation();
 
     
     $search = new Search;
@@ -18,14 +18,13 @@
             'postalCode' => $postalCode,
             'eventDate' => $eventDate
         );
-
         $foundEvents = $search->findEvent($data);
        
     }
 
    
 
-    //include('pages/search.php');
+    include('pages/search.php');
     
 
 

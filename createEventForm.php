@@ -93,7 +93,7 @@
                 'id'=>$lastId
             ));
                 if($tokenUpdate){
-                    $link = DOMAIN."approval/?eventid=$lastId&token=$createToken";
+                    $link = "http://localhost/theevent/approval/?eventid=$lastId&token=$createToken";
                     $body = tokenTemplate($link);
                     
                         $mail = new Mailsend(array(

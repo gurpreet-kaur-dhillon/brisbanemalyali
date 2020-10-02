@@ -3,4 +3,4 @@
   
     session_destroy();
     session_unset();
-    header('location:'.DOMAIN);
+    header('location:http://localhost/theevent/');
